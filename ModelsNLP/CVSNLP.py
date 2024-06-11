@@ -8,7 +8,7 @@ sentences = []
 labels = []
 
 # Read data from CSV file
-with open('text_emotion.csv', encoding='UTF-8') as csvfile:
+with open('../text_emotion.csv', encoding='UTF-8') as csvfile:
     reader = csv.reader(csvfile, delimiter=",")
     for row in reader:
         labels.append(row[0])
